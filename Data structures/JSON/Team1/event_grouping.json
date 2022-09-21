@@ -16,7 +16,7 @@
 		"output": [ 
 			{
 				"name": "csv",
-				"description": "CSV including the enriched information."
+				"description": "CSV including the grouped events."
 			}
 		],
 		"databases": ["Events"]
