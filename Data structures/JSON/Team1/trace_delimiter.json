@@ -1,0 +1,27 @@
+{
+		"name": "Trace Delimiter",
+		"description": "In order to build an event log we must organize data in traces, which represent groups of events executed during the same activity. The trace delimiter services parses an input CSV and introduces a new column specifying the trace id for each event, based on the topic mask and the values for the start and finish events.",
+		"input": [ 
+			{
+				"name": "mask",
+				"description": "The topic mask to group same originator events."
+			},{
+				"name": "first",
+				"description": "The data value indicating the start of a trace."
+			},{
+				"name": "last",
+				"description": "The data value indicating the end of a trace"
+			},{
+				"name": "new",
+				"description": "The name of the column with the trace id."
+			}
+		],
+		"output": [ 
+			{
+				"name": "csv",
+				"description": "Output CSV including the new column."
+			}
+		],
+		"databases": ["Events"]
+}
+

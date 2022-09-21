@@ -1,0 +1,18 @@
+{
+		"name": "Event Removal",
+		"description": "The event removal service allows to eliminate those data records that are of no interest and which satisfy particular conditions.",
+		"input": [ 
+			{
+				"name": "remove",
+				"description": "List of comma-separated values, either regular expressions or numerical conditions."
+			}
+		],
+		"output": [ 
+			{
+				"name": "csv",
+				"description": "CSV without the selected events."
+			}
+		],
+		"databases": ["Events"]
+}
+

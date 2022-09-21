@@ -1,0 +1,27 @@
+{
+		"name": "Trace Behaviour Enrichment",
+		"description": "The trace behaviour enrichment service allows to extract new attributes that provide additional information about behavioural patterns of the originator associated with a trace of events. The output attribute’s values can differ along traces with the same originator, as they could include information regarding, for example, the overall mood of the patient during the execution of the activity.",
+		"input": [ 
+			{
+				"name": "fields",
+				"description": "List of comma-separated names of the columns with information about the originator."
+			},{
+				"name": "regex",
+				"description": "List of comma-separated regular expressions to collect the information related to each attribute."
+			},{
+				"name": "trace_attrs",
+				"description": "List of comma-separated names of the attributes’ columns. The number of elements of this parameter must coincide with the total sum of groups defined in the regular expressions specified before."
+			},{
+				"name": "trace_attr_types",
+				"description": ": List of comma-separated values indicating the data type of each trace attribute. It is recommended that built-in JSON Schema or XML Schema data types are used, for example, string or number."
+			}
+		],
+		"output": [ 
+			{
+				"name": "csv",
+				"description": "CSV including the enriched information."
+			}
+		],
+		"databases": ["Events"]
+}
+

@@ -1,0 +1,24 @@
+{
+		"name": "Event Selection",
+		"description": "This service allows to select a subset of events from the event database based on a start and finish timestamps and the activity of interest. It must be mentioned that the output CSV has as columns the list of unique attributesidentified across the schemas of the group of sensors associated to thegroup of events selected. If a final column is not present in a specific data recordits value is left as an empty string. Additionally, events are ordered according to the value of the timestamp field, which is common to all data records.",
+		"input": [ 
+			{
+				"name": "start",
+				"description": "Timestamp, in ISO 8601 format, indicating the beginning point, inclusive, from which events are selected."
+			},{
+				"name": "end",
+				"description": "Timestamp, in ISO 8601 format, indicating the ending point, inclusive, till which events are selected."
+			},{
+				"name": "activity",
+				"description": "The id or name of the activity which wants to be filtered"
+			}
+		],
+		"output": [ 
+			{
+				"name": "csv",
+				"description": "Output CSV containing the selected events."
+			}
+		],
+		"databases": ["Events"]
+}
+

@@ -1,0 +1,21 @@
+{
+		"name": "Column Standardization",
+		"description": "At the time of generating the event log, data records must share all the same columns, based on the activity being modelled. In order to ensure the uniformity of the final event log, this service is specified",
+		"input": [ 
+			{
+				"name": "activity",
+				"description": "The id or name of the activity whose schema will be taken as reference for the columns of the output CSV."
+			},{
+				"name": "fill",
+				"description": "List of comma-separated values indicating those columns whose value for a data record, if empty, must be taken from the information collected by other sensors belonging to the same trace."
+			}
+		],
+		"output": [ 
+			{
+				"name": "csv",
+				"description": "Standardized CSV."
+			}
+		],
+		"databases": ["Events"]
+}
+

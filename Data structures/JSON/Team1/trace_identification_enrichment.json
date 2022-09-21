@@ -1,0 +1,27 @@
+{
+		"name": "Trace Identification Enrichment",
+		"description": "The trace identification enrichment service allows the extraction of new attributes from raw data providing additional information about the identity of the originator of a trace. These attributes can be useful to specify and apply filters in later stages of the process mining workflow.",
+		"input": [ 
+			{
+				"name": "fields",
+				"description": "List of comma-separated names of the columns with information about the originator."
+			},{
+				"name": "regex",
+				"description": "List of comma-separated regular expressions to collect the information related to each attribute."
+			},{
+				"name": "trace_attrs",
+				"description": "List of comma-separated names of the attributes’ columns. The number of elements of this parameter must coincide with the total sum of groups defined in the regular expressions specified before."
+			},{
+				"name": "trace_attr_types",
+				"description": ": List of comma-separated values indicating the data type of each trace attribute. It is recommended that built-in JSON Schema or XML Schema data types are used, for example, string or number."
+			}
+		],
+		"output": [ 
+			{
+				"name": "csv",
+				"description": "CSV including the enriched information."
+			}
+		],
+		"databases": ["Events"]
+}
+

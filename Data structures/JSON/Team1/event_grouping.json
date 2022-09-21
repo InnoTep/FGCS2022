@@ -1,0 +1,24 @@
+{
+		"name": "Event Grouping",
+		"description": " The event grouping service is in charge of reducing the dimensionality of events by generating higher levels of abstraction for particular actions. It is important to note down that groups must be ordered by increasing size of granularity, as once an event is grouped within one category or action, no other grouping can be applied.",
+		"input": [ 
+			{
+				"name": "init",
+				"description": "List of comma-separated values indicating the corresponding start event for each group."
+			},{
+				"name": "end",
+				"description": "List of comma-separated values indicating the corresponding end event for each group."
+			},{
+				"name": "name",
+				"description": "List of comma-separated values indicating the resulting name of the collection of events for each group."
+			}
+		],
+		"output": [ 
+			{
+				"name": "csv",
+				"description": "CSV including the enriched information."
+			}
+		],
+		"databases": ["Events"]
+}
+
