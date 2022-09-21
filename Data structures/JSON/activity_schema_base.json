@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/activity",
+  "title": "Activity",
+  "description": "JSON schema of an activity in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+    	"start_time": {"type": "string",
+					   "format": "date-time"},
+		"end_time": {"type": "string",
+					 "format": "date-time"},			  
+		"activity_info": {"type": "object",
+      			     "properties": {
+						"name": {"type": "string"},
+						"subtype": {"type": "string"}
+					},
+					"required": ["name"],
+					"additionalProperties": true
+		}
+	},
+	"required": ["start_time", "end_time", "activity_info"],
+	"additionalProperties":true
+}
+

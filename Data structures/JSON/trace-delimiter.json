@@ -1,0 +1,23 @@
+{
+	"name": "Trace delimiter",
+	"description": "Groups events by traces an outputs a conforming event log",
+	"input": [
+		{"name": "collection_input",
+		 "description": "Name of the collection that will be used to feed the service"},
+		{"name": "first",
+		 "description": "The value of the start activity of a trace"},
+		{"name": "last",
+		 "description": "The value of the last activity of a trace"},
+		{"name": "mask" ,
+		 "description": "The topic mask to group same originator events"},
+		{"name": "collection_output",
+		 "description": "Name of the collection were the resulting records will be stored"}
+	],
+	"output": [
+		{"name": "json",
+		 "description": "JSON conforming to the JXES Event Log standard"}
+	],
+	"databases": ["Event_Log", "Schemas"]
+}
+
+

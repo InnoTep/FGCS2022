@@ -1,0 +1,52 @@
+{
+	"timestamp": "2022-04-10T00:12:10.367281Z",
+	"device": {
+		"id": "M015",
+		"measure": {
+			"value": "ON"
+		}
+	}
+}
+
+
+{
+	"timestamp": "2022-04-10T05:20:42.892920Z",
+	"device": {
+		"id": "M015",
+		"measure": {
+			"value": "OFF"
+		}
+	}
+}
+
+{
+	"timestamp": "2022-04-10T00:12:10.367281Z",
+	"device": {
+		"id": "M015",
+		"measure": {
+			"value": "ON"
+		}
+	},
+	"tag": "Sleeping=begin"                              
+}
+
+{
+	"timestamp": "2022-04-10T05:20:42.892920Z",
+	"device": {
+		"id": "M015",
+		"measure": {
+			"value": "OFF"
+		}
+	},
+	"tag": "Sleeping=end"                                             
+}
+
+{
+	"start_time": "2022-04-10T00:12:10.367281Z",
+	"end_time": "2022-04-10T05:20:42.892920Z",
+	"activity": {
+		"name": "Sleeping"
+		"subtype": "Personal Activity"
+	}
+}
+

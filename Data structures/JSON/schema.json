@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Event",
+  "description": "JSON schema of an event in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+    	"caseid": {"type": "string"},
+    	"timestamp": {"type": "string",
+					  "format": "date-time"},
+		"sensor": {"type": "object",
+      			   "properties": {
+						"id": {"type": "string"}, /**Analizar si poner algún formato concreto para el id - ejemplo CASAS*/
+						"class": {"type": "string",
+								  "enum": ["temperature", "presence", "humidity"]}, /**Creo que es más sencillo si no meto el enumerado y lo dejamos como string libre o incluso quito la clase de sensor*/
+						"measure": {
+          					"type": "object",
+          					"properties": {
+            					"value": {"type": "string"},
+								"unit": {"type": "string"} /**OJO: cómo defino las unidades: solo con una o 2 letras? incluir un patrón*/
+                            },
+                              "required":["value",],
+							  "additionalProperties":{"type":"string"} /**Para permitir propiedades adicionales?*/
+                        }
+                      }
+					},
+		/**Seguir por aquí*/
+					
+		"incidences": {"type": "array",
+						"items":{"type": "object",
+						"properties":{
+							"geoposition":{"type": "object",
+								"properties": {
+									"latitude": {"type": "number",
+												"minimum":-90,
+												"maximum":90,
+												"maximumExclusive": false,
+												"minimumExclusive": false
+												},
+									"longitude": {"type": "number",
+												"minimum":-180,
+												"maximum":180,
+												"maximumExclusive": false,
+												"minimumExclusive": false}
+								}
+							},
+							"description":{"type": "string"}
+						},
+						"required":["geoposition"],
+						"additionalProperties":false
+						}
+					  },
+		"trafficJams": {"type": "array",
+              "items": {"type": "object",
+                "properties": {
+                  "streetType": {"type": "string",
+								 "enum":["Avenue","street","square"]
+								},
+                  "streetName": {"type": "string"},
+                  "date":{"type": "string",
+						  "format": "date-time"},
+                  "trafficJamLevel":{"type": "integer",
+									 "minimum":1,
+									 "maximum":10,
+									 "maximumExclusive": false,
+									 "minimumExclusive": false}
+                },
+				"required":["streetType", "streetName", "date", "trafficJamLevel"],
+				"additionalProperties":{"type":"number"}
+              }
+			}
+    },
+  "dependencies": {
+	"areaName":["pollution", "incidences", "trafficJams"]
+  }
+}

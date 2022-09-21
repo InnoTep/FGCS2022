@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/event",
+  "title": "Event",
+  "description": "JSON schema of an event in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+    	"timestamp": {"type": "string",
+					  "format": "date-time"},
+		"device": {"type": "object",
+      			   "properties": {
+						"id": {"type": "string"},
+						"measure": {
+          					"type": "object",
+          					"properties": {
+            					"value": {"type": "string"},
+								"unit": {"type": "string"} 
+                            },
+                            "required":["value"],
+							"additionalProperties":true
+                        }
+					},
+					"required": ["id", "measure"],
+					"additionalProperties":true
+		},
+	},
+	"required": ["timestamp", "device"],
+	"additionalProperties":true
+}
+

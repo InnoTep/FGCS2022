@@ -1,0 +1,2034 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://webmind.dico.unimi.it/CARE/locont.owl"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     ontologyIRI="http://webmind.dico.unimi.it/CARE/locont.owl">
+    <Prefix name="locont" IRI="http://webmind.dico.unimi.it/CARE/locont.owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssistantProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BathRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BathroomFixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BedRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BreakRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breakfast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CampusBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clerk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConferenceRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cupboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CupsCupboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiningRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dinner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dishwasher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Door"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freezer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrontDoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Furniture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GettingDrink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroceriesCupboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HallBathroomDoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HallBedroomDoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HallToiletDoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HavingBreakfast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HavingDinner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HavingDrink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HospitalRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IdlePerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndoorLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndoorSportsCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kitchen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeavingHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LivingRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meadow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeetingRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microwave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonPedestrianOutdoorLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutdoorField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutdoorLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutdoorSportsCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PansCupboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person_notUsingDishwasher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person_notUsingFreezer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person_notUsingGroceries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person_notUsingMicrowave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person_notUsingPans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person_notUsingPlates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlatesCupboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparingBreakfast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparingDinner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparingDrink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparingFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Showering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stockholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SymbolicLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToiletBowl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToiletFlush"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToiletRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Undergraduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingToilet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Datatype"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArtifact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInside"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usingArtifact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#durationValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCurrentHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDoorStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastActivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alice_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bagno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bathroom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bed_room"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cups_cupboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dishwasher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#doccia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#freezer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fridge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frontdoor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#groceries_cupboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hall_bathroom_door"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hall_bedroom_door"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hall_room"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hall_toilet_door"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kitchen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#microwave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pans_cupboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#plates_cupboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#toilet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#toilet_flush"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#washing_machine"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Breakfast"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectUnionOf>
+                <Class IRI="#HavingBreakfast"/>
+                <Class IRI="#PreparingBreakfast"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dinner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectUnionOf>
+                <Class IRI="#HavingDinner"/>
+                <Class IRI="#PreparingDinner"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GettingDrink"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#HavingDrink"/>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Person"/>
+                    <ObjectUnionOf>
+                        <ObjectComplementOf>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty IRI="#usingArtifact"/>
+                                <ObjectUnionOf>
+                                    <Class IRI="#Dishwasher"/>
+                                    <Class IRI="#Freezer"/>
+                                    <Class IRI="#GroceriesCupboard"/>
+                                    <Class IRI="#Microwave"/>
+                                    <Class IRI="#PansCupboard"/>
+                                    <Class IRI="#PlatesCupboard"/>
+                                </ObjectUnionOf>
+                            </ObjectSomeValuesFrom>
+                        </ObjectComplementOf>
+                        <DataSomeValuesFrom>
+                            <DataProperty IRI="#lastActivity"/>
+                            <DataOneOf>
+                                <Literal datatypeIRI="&xsd;string">PreparingDinner</Literal>
+                                <Literal datatypeIRI="&xsd;string">PreparingDrink</Literal>
+                                <Literal datatypeIRI="&xsd;string">PreparingFood</Literal>
+                            </DataOneOf>
+                        </DataSomeValuesFrom>
+                    </ObjectUnionOf>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HavingBreakfast"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#IdlePerson"/>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#lastActivity"/>
+                        <DataOneOf>
+                            <Literal datatypeIRI="&xsd;string">PreparingBreakfast</Literal>
+                        </DataOneOf>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HavingDinner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#IdlePerson"/>
+                    <DataSomeValuesFrom>
+                        <DataProperty IRI="#lastActivity"/>
+                        <DataOneOf>
+                            <Literal datatypeIRI="&xsd;string">HavingDinner</Literal>
+                            <Literal datatypeIRI="&xsd;string">PreparingDinner</Literal>
+                            <Literal datatypeIRI="&xsd;string">PreparingDrink</Literal>
+                            <Literal datatypeIRI="&xsd;string">PreparingFood</Literal>
+                        </DataOneOf>
+                    </DataSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HavingDrink"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Person"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+                        <Class IRI="#Kitchen"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#usingArtifact"/>
+                        <ObjectUnionOf>
+                            <Class IRI="#CupsCupboard"/>
+                            <Class IRI="#Fridge"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IdlePerson"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#usingArtifact"/>
+                    <Class IRI="#Artifact"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IndividualActivity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Activity"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasActor"/>
+                <Class IRI="#Person"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LeavingHouse"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Person"/>
+                    <ObjectUnionOf>
+                        <ObjectComplementOf>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty IRI="#usingArtifact"/>
+                                <Class IRI="#Artifact"/>
+                            </ObjectSomeValuesFrom>
+                        </ObjectComplementOf>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#usingArtifact"/>
+                            <Class IRI="#FrontDoor"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectUnionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+                        <Class IRI="#Hall"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person_notUsingDishwasher"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#usingArtifact"/>
+                    <Class IRI="#Dishwasher"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person_notUsingFreezer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#usingArtifact"/>
+                    <Class IRI="#Freezer"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person_notUsingGroceries"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#usingArtifact"/>
+                    <Class IRI="#GroceriesCupboard"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person_notUsingMicrowave"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#usingArtifact"/>
+                    <Class IRI="#Microwave"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person_notUsingPans"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#usingArtifact"/>
+                    <Class IRI="#PansCupboard"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person_notUsingPlates"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectComplementOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#usingArtifact"/>
+                    <Class IRI="#PlatesCupboard"/>
+                </ObjectSomeValuesFrom>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PreparingBreakfast"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Person"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+                        <Class IRI="#Kitchen"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#usingArtifact"/>
+                        <ObjectUnionOf>
+                            <Class IRI="#CupsCupboard"/>
+                            <Class IRI="#GroceriesCupboard"/>
+                            <Class IRI="#PlatesCupboard"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                    <DataAllValuesFrom>
+                        <DataProperty IRI="#hasCurrentHours"/>
+                        <DataOneOf>
+                            <Literal datatypeIRI="&xsd;string">early_morning</Literal>
+                            <Literal datatypeIRI="&xsd;string">morning</Literal>
+                        </DataOneOf>
+                    </DataAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PreparingDinner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectUnionOf>
+                <Class IRI="#PreparingDrink"/>
+                <Class IRI="#PreparingFood"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PreparingDrink"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#HavingDrink"/>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Person"/>
+                    <DataAllValuesFrom>
+                        <DataProperty IRI="#hasCurrentHours"/>
+                        <DataOneOf>
+                            <Literal datatypeIRI="&xsd;string">evening</Literal>
+                            <Literal datatypeIRI="&xsd;string">late_evening</Literal>
+                        </DataOneOf>
+                    </DataAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PreparingFood"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Person"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+                        <Class IRI="#Kitchen"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#usingArtifact"/>
+                        <ObjectUnionOf>
+                            <Class IRI="#Freezer"/>
+                            <Class IRI="#GroceriesCupboard"/>
+                            <Class IRI="#Microwave"/>
+                            <Class IRI="#PlatesCupboard"/>
+                        </ObjectUnionOf>
+                    </ObjectSomeValuesFrom>
+                    <DataAllValuesFrom>
+                        <DataProperty IRI="#hasCurrentHours"/>
+                        <DataOneOf>
+                            <Literal datatypeIRI="&xsd;string">evening</Literal>
+                            <Literal datatypeIRI="&xsd;string">late_evening</Literal>
+                        </DataOneOf>
+                    </DataAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Showering"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectUnionOf>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#IdlePerson"/>
+                        <DataSomeValuesFrom>
+                            <DataProperty IRI="#lastActivity"/>
+                            <DataOneOf>
+                                <Literal datatypeIRI="&xsd;string">Showering</Literal>
+                            </DataOneOf>
+                        </DataSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#Person"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+                            <Class IRI="#ToiletRoom"/>
+                        </ObjectSomeValuesFrom>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#usingArtifact"/>
+                            <Class IRI="#HallToiletDoor"/>
+                        </ObjectSomeValuesFrom>
+                        <DataAllValuesFrom>
+                            <DataProperty IRI="#hasCurrentHours"/>
+                            <DataOneOf>
+                                <Literal datatypeIRI="&xsd;string">early_morning</Literal>
+                                <Literal datatypeIRI="&xsd;string">morning</Literal>
+                            </DataOneOf>
+                        </DataAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sleeping"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Person"/>
+                    <ObjectUnionOf>
+                        <ObjectComplementOf>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty IRI="#usingArtifact"/>
+                                <Class IRI="#Artifact"/>
+                            </ObjectSomeValuesFrom>
+                        </ObjectComplementOf>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#usingArtifact"/>
+                            <Class IRI="#HallBedroomDoor"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectUnionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+                        <Class IRI="#BedRoom"/>
+                    </ObjectSomeValuesFrom>
+                    <DataAllValuesFrom>
+                        <DataProperty IRI="#hasCurrentHours"/>
+                        <DataOneOf>
+                            <Literal datatypeIRI="&xsd;string">early_morning</Literal>
+                            <Literal datatypeIRI="&xsd;string">late_evening</Literal>
+                            <Literal datatypeIRI="&xsd;string">night</Literal>
+                        </DataOneOf>
+                    </DataAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UsingToilet"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalActivity"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasActor"/>
+                <ObjectUnionOf>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#Person"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+                            <Class IRI="#BathRoom"/>
+                        </ObjectSomeValuesFrom>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#usingArtifact"/>
+                            <Class IRI="#HallBathroomDoor"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#Person"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="#usingArtifact"/>
+                            <Class IRI="#ToiletFlush"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artifact"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssistantProfessor"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BathRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BathroomFixture"/>
+        <Class IRI="#Fixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beach"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BedRoom"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BreakRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breakfast"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#IndoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampusBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassRoom"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clerk"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConferenceRoom"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cupboard"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CupsCupboard"/>
+        <Class IRI="#Cupboard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiningRoom"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dinner"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dishwasher"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Door"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fixture"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freezer"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fridge"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrontDoor"/>
+        <Class IRI="#Door"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Furniture"/>
+        <Class IRI="#Artifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garden"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GettingDrink"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroceriesCupboard"/>
+        <Class IRI="#Cupboard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hall"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HallBathroomDoor"/>
+        <Class IRI="#Door"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HallBedroomDoor"/>
+        <Class IRI="#Door"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HallToiletDoor"/>
+        <Class IRI="#Door"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HavingBreakfast"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HavingDinner"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HavingDrink"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HospitalRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IdlePerson"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorLocation"/>
+        <Class IRI="#SymbolicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorSportsCenter"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kitchen"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeavingHouse"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecturer"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LivingRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LivingRoom"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mall"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meadow"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeetingRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Microwave"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonPedestrianOutdoorLocation"/>
+        <Class IRI="#OutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Office"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Office"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutdoorField"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutdoorLocation"/>
+        <Class IRI="#SymbolicLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutdoorLocation"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasArtifact"/>
+                <Class IRI="#BathroomFixture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutdoorSportsCenter"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PansCupboard"/>
+        <Class IRI="#Cupboard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+        <Class IRI="#OutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person_notUsingDishwasher"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person_notUsingFreezer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person_notUsingGroceries"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person_notUsingMicrowave"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person_notUsingPans"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person_notUsingPlates"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalActivity"/>
+        <Class IRI="#IndividualActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhD"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlatesCupboard"/>
+        <Class IRI="#Cupboard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparingBreakfast"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparingDinner"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparingDrink"/>
+        <Class IRI="#HavingDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparingFood"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestRoom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasArtifact"/>
+            <Class IRI="#ToiletBowl"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#IndoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shower"/>
+        <Class IRI="#BathroomFixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Showering"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleeping"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stockholder"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SymbolicLocation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToiletBowl"/>
+        <Class IRI="#BathroomFixture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToiletFlush"/>
+        <Class IRI="#ToiletBowl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToiletRoom"/>
+        <Class IRI="#Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Undergraduate"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanArea"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingToilet"/>
+        <Class IRI="#PersonalActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wood"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkBuilding"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#ClassRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#ConferenceRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#DiningRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#HospitalRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#Kitchen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#Laboratory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#LivingRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BedRoom"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampusBuilding"/>
+        <Class IRI="#HomeBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampusBuilding"/>
+        <Class IRI="#Hospital"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampusBuilding"/>
+        <Class IRI="#IndoorSportsCenter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampusBuilding"/>
+        <Class IRI="#Mall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CampusBuilding"/>
+        <Class IRI="#WorkBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#ConferenceRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#DiningRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#HospitalRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#Kitchen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#Laboratory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#LivingRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassRoom"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#DiningRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#HospitalRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#Kitchen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#Laboratory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#LivingRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConferenceRoom"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#HospitalRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#Kitchen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#Laboratory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#LivingRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiningRoom"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HomeBuilding"/>
+        <Class IRI="#Hospital"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HomeBuilding"/>
+        <Class IRI="#IndoorSportsCenter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HomeBuilding"/>
+        <Class IRI="#Mall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HomeBuilding"/>
+        <Class IRI="#WorkBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#IndoorSportsCenter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#Mall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#WorkBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HospitalRoom"/>
+        <Class IRI="#Kitchen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HospitalRoom"/>
+        <Class IRI="#Laboratory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HospitalRoom"/>
+        <Class IRI="#LivingRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HospitalRoom"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HospitalRoom"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IndoorLocation"/>
+        <Class IRI="#OutdoorLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IndoorSportsCenter"/>
+        <Class IRI="#Mall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IndoorSportsCenter"/>
+        <Class IRI="#WorkBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#Laboratory"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#LivingRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Kitchen"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#LivingRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LivingRoom"/>
+        <Class IRI="#Office"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LivingRoom"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mall"/>
+        <Class IRI="#WorkBuilding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NonPedestrianOutdoorLocation"/>
+        <Class IRI="#PedestrianOutdoorLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Office"/>
+        <Class IRI="#RestRoom"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PersonalActivity"/>
+        <NamedIndividual IRI="#alice_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#alice_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestRoom"/>
+        <NamedIndividual IRI="#bagno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BathRoom"/>
+        <NamedIndividual IRI="#bathroom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BedRoom"/>
+        <NamedIndividual IRI="#bed_room"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CupsCupboard"/>
+        <NamedIndividual IRI="#cups_cupboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dishwasher"/>
+        <NamedIndividual IRI="#dishwasher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shower"/>
+        <NamedIndividual IRI="#doccia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Freezer"/>
+        <NamedIndividual IRI="#freezer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fridge"/>
+        <NamedIndividual IRI="#fridge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FrontDoor"/>
+        <NamedIndividual IRI="#frontdoor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GroceriesCupboard"/>
+        <NamedIndividual IRI="#groceries_cupboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HallBathroomDoor"/>
+        <NamedIndividual IRI="#hall_bathroom_door"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HallBedroomDoor"/>
+        <NamedIndividual IRI="#hall_bedroom_door"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hall"/>
+        <NamedIndividual IRI="#hall_room"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HallToiletDoor"/>
+        <NamedIndividual IRI="#hall_toilet_door"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kitchen"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Microwave"/>
+        <NamedIndividual IRI="#microwave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PansCupboard"/>
+        <NamedIndividual IRI="#pans_cupboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PlatesCupboard"/>
+        <NamedIndividual IRI="#plates_cupboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ToiletRoom"/>
+        <NamedIndividual IRI="#toilet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ToiletFlush"/>
+        <NamedIndividual IRI="#toilet_flush"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid674"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid676"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid680"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid682"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid686"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid688"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid689"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid690"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid691"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid692"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid693"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid694"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid695"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid696"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid697"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid698"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid699"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid700"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid701"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid702"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid703"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid704"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid705"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid706"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid707"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid708"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Datatype"/>
+        <AnonymousIndividual nodeID="_:http://webmind.dico.unimi.it/CARE/locont.owl#genid709"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentActivity"/>
+        <NamedIndividual IRI="#alice"/>
+        <NamedIndividual IRI="#alice_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+        <NamedIndividual IRI="#alice"/>
+        <NamedIndividual IRI="#bathroom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasArtifact"/>
+        <NamedIndividual IRI="#bagno"/>
+        <NamedIndividual IRI="#doccia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#cups_cupboard"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#dishwasher"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#freezer"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#fridge"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#frontdoor"/>
+        <NamedIndividual IRI="#hall_room"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#groceries_cupboard"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#hall_bathroom_door"/>
+        <NamedIndividual IRI="#bathroom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#hall_bedroom_door"/>
+        <NamedIndividual IRI="#bed_room"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#hall_toilet_door"/>
+        <NamedIndividual IRI="#toilet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#microwave"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#pans_cupboard"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#plates_cupboard"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#toilet_flush"/>
+        <NamedIndividual IRI="#bathroom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInside"/>
+        <NamedIndividual IRI="#washing_machine"/>
+        <NamedIndividual IRI="#kitchen"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCurrentHours"/>
+        <NamedIndividual IRI="#alice"/>
+        <Literal datatypeIRI="&xsd;string">night</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStatus"/>
+        <NamedIndividual IRI="#doccia"/>
+        <Literal datatypeIRI="&xsd;string">ON</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasActor"/>
+        <ObjectProperty IRI="#hasCurrentActivity"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArtifact"/>
+        <Class IRI="#SymbolicLocation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentActivity"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInside"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usingArtifact"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArtifact"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentSymbolicLocation"/>
+        <Class IRI="#SymbolicLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInside"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usingArtifact"/>
+        <Class IRI="#Artifact"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#durationValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCurrentHours"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDuration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lastActivity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCurrentHours"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDoorStatus"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#lastActivity"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCurrentHours"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDoorStatus"/>
+        <Class IRI="#Door"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDuration"/>
+        <Class IRI="#Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStatus"/>
+        <Class IRI="#Artifact"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastActivity"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCurrentHours"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">afternoon</Literal>
+            <Literal datatypeIRI="&xsd;string">early_morning</Literal>
+            <Literal datatypeIRI="&xsd;string">evening</Literal>
+            <Literal datatypeIRI="&xsd;string">late_evening</Literal>
+            <Literal datatypeIRI="&xsd;string">morning</Literal>
+            <Literal datatypeIRI="&xsd;string">night</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDoorStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">CLOSED</Literal>
+            <Literal datatypeIRI="&xsd;string">OPEN</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDuration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStatus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&xsd;string">OFF</Literal>
+            <Literal datatypeIRI="&xsd;string">ON</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastActivity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

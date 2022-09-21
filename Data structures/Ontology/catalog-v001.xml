@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1593455086501" name="duplicate:http://webmind.dico.unimi.it/CARE/locont.owl" uri="adlont.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1593455086501" name="duplicate:http://webmind.dico.unimi.it/CARE/locont.owl" uri="multistep.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1593455086501" name="duplicate:http://webmind.dico.unimi.it/CARE/locont.owl" uri="onestep.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1593455086501" name="duplicate:http://webmind.dico.unimi.it/CARE/locont.owl" uri="snapshot.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1593455086501" name="http://webmind.dico.unimi.it/opportunity-elog.owl" uri="multilevel_activities.owl.xml"/>
+    </group>
+</catalog>

@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/service",
+  "title": "Service",
+  "description": "JSON schema of an existing service in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+		"name": {"type": "string"},
+		"description": {"type": "string"},
+		"input": {"type": "array",
+				  "items": {"$ref": "#/definitions/param"}
+		},
+		"output": {"type": "array",
+				  "items": {"$ref": "#/definitions/param"}
+		},
+		"exceptions": {"type": "array",
+					   "items": {"$ref": "#/definitions/exception"}
+		},
+		"databases": {"type": "array",
+						"items": {
+							"type": "string",
+							"uniqueItems": true
+					    }
+		}
+	},
+	"required": ["name", "description"],
+	"additionalProperties":true,
+	"definitions":{
+		"param": {"type": "object",
+				  "properties": {
+					  "name": {"type": "string"},
+					  "description": {"type": "string"}
+				  },
+				  "required": ["name", "description"],
+				  "additionalProperties":true
+		},
+		"exception": {"type": "object",
+					  "properties": {
+						  "name": {"type": "string"},
+						  "description": {"type": "string"}
+					  },
+					  "required": ["name", "description"],
+				      "additionalProperties":true
+		}
+	}
+}
+

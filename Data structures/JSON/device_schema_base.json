@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/device",
+  "title": "Device",
+  "description": "JSON schema of a device in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+		"id": {"type": "string"},
+		"measurement": {"type": "string"},
+		"class": {"type": "string",
+				  "enum": ["physical", "virtual"]},
+		"locations": {"type": "array",
+					  "items": {"$ref": "#/definitions/location"}
+		},
+		"activities": {"type": "array",
+					   "items": {"$ref": "#/definitions/activity"}
+		"status": {"type": "string",
+				   "enum": ["active", "inactive"]},
+	},
+	"required": ["id", "locations"],
+	"additionalProperties":true,
+	"definitions": {
+		"location": {"type": "object",
+					 "properties": {
+						 "id": {"type": "string"},
+						 "description": {"type": "string"},
+						 "datefrom": {"type": "string",
+									  "format": "date-time"},
+						 "dateto": {"type": "string",
+									"format": "date-time"}
+					 },
+					 "required": ["id", "datefrom"],
+					 "additionalProperties": true
+		}
+		"activity": {"type": "object",
+					 "properties": {
+						 "activity_info": {"$ref": "https://example.com/schemas/activity#activity_info"},
+						 "datefrom": {"type": "string",
+									  "format": "date-time"},
+						 "dateto": {"type": "string",
+									"format": "date-time"}
+					 },
+					 "required": ["activity_info", "datefrom"],
+					 "additionalProperties": true
+		}
+	}		
+}
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/device",
+  "title": "Device",
+  "description": "JSON schema of a device in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+		"id": {"type": "string"},
+		"measurement": {"type": "string"},
+		"class": {"type": "string", "enum": ["physical", "virtual"]},
+		"locations": {"type": "array",
+					  "items": {"type": "object",
+								"properties": {
+									"id": {"type": "string"},
+									"description": {"type": "string"},
+									"datefrom": {"type": "string", "format": "date-time"},
+									"dateto": {"type": "string", "format": "date-time"}
+								},
+								"required": ["id", "datefrom"],
+								"additionalProperties": true
+					  }
+		},
+		"activities": {"type": "array",
+					   "items": {"type": "object",
+								 "properties": {
+									 "activity_info": {
+										 "$ref": "https://example.com/schemas/activity#activity_info"},
+									 "datefrom": {"type": "string", "format": "date-time"},
+									 "dateto": {"type": "string", "format": "date-time"}
+								},
+								"required": ["activity_info", "datefrom"],
+								"additionalProperties": true
+					   }
+		},
+		"status": {"type": "string", "enum": ["active", "inactive"]},
+	},
+	"required": ["id", "locations"],
+	"additionalProperties":true,
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+	"name": "Event selection",
+	"description": "Selects a subset of activities from the activity database",
+	"input": [
+		{"name": "collection_input",
+		 "description": "Name of the collection that will be used to feed the service"},
+		{"name": "start",
+		 "description": "Timestamp indicating the beginning point from which events are selected"},
+		{"name": "end",
+		 "description": "Timestamp indicating the ending point until which events are selected"},
+		{"name": "activity" ,
+		 "description": "The name of the subtype or type of activity which wants to be selected"},
+		{"name": "collection_output",
+		 "description": "Name of the collection were the resulting records will be stored"}
+	],
+	"output": [
+		{"name": "json",
+		 "description": "JSON with the list of unique attributes identified accross activities"}
+	],
+	"databases": ["Activities", "Event_Log", "Schemas"]
+}
+

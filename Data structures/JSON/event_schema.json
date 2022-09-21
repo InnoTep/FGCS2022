@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Event",
+  "description": "JSON schema of an event in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+    	"caseid": {"type": "string"},
+    	"timestamp": {"type": "string",
+					  "format": "date-time"}, /**UTC zone. XES requires UTC --> In the IEEE XES Standard, timestamps are required to in UTC
+time, which enforces either using the UTC time zone or using a time offset to the UTC time zone*/
+		"device": {"type": "object",
+      			   "properties": {
+						"id": {"type": "string"}, /**Analizar si poner algún formato concreto para el id - ejemplo CASAS*/
+						"class": {"type": "string",
+								  "enum": ["physical", "virtual"]}, /**Campo opcional*/
+						"measure": { /**La medida puede ser compuesta o no. Sensores físicos o virtuales. Virtual: es el que da información componiendo la información de sensores físicos*/
+          					"type": "object",
+          					"properties": {
+            					"value": {"type": "string"},
+								"unit": {"type": "string"} /**OJO: cómo defino las unidades: solo con una o 2 letras? incluir un patrón*/
+                            },
+                              "required":["value"],
+							  "additionalProperties":{"type":"string"} /**Para permitir propiedades adicionales?*/
+                        }
+                      }
+					},
+		/**Seguir por aquí*/
+					
+		"incidences": {"type": "array",
+						"items":{"type": "object",
+						"properties":{
+							"geoposition":{"type": "object",
+								"properties": {
+									"latitude": {"type": "number",
+												"minimum":-90,
+												"maximum":90,
+												"maximumExclusive": false,
+												"minimumExclusive": false
+												},
+									"longitude": {"type": "number",
+												"minimum":-180,
+												"maximum":180,
+												"maximumExclusive": false,
+												"minimumExclusive": false}
+								}
+							},
+							"description":{"type": "string"}
+						},
+						"required":["geoposition"],
+						"additionalProperties":false
+						}
+					  },
+		"trafficJams": {"type": "array",
+              "items": {"type": "object",
+                "properties": {
+                  "streetType": {"type": "string",
+								 "enum":["Avenue","street","square"]
+								},
+                  "streetName": {"type": "string"},
+                  "date":{"type": "string",
+						  "format": "date-time"},
+                  "trafficJamLevel":{"type": "integer",
+									 "minimum":1,
+									 "maximum":10,
+									 "maximumExclusive": false,
+									 "minimumExclusive": false}
+                },
+				"required":["streetType", "streetName", "date", "trafficJamLevel"],
+				"additionalProperties":{"type":"number"}
+              }
+			}
+    },
+  "dependencies": {
+	"areaName":["pollution", "incidences", "trafficJams"]
+  }
+}

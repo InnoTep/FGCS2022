@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schemas/application",
+  "title": "Application",
+  "description": "JSON schema of an existing application in the Assisted Smart Home",
+  "type": "object",
+  "properties": {
+		"name": {"type": "string"},
+		"description": {"type": "string"},
+		"services": {"$ref": "#/definitions/uniqueArray"},
+		"devices": {"$ref": "#/definitions/uniqueArray"},
+	},
+	"required": ["name", "description"],
+	"additionalProperties":true,
+	"definitions":{
+		"uniqueArray": {"type": "array",
+						"items": {
+							"type": "string",
+							"uniqueItems": true
+					    }
+		}
+	}
+}
+

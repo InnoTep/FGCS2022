@@ -1,0 +1,49 @@
+{
+	"id": "P006",
+	"measurement": "Proximity",
+	"class": "physical",
+	"locations": [
+		{"id": "desk",
+		 "description": "Desk located in the Smart Home's bedroom",
+		 "datefrom": "2020-10-12T12:30:20+00:00"}
+	]
+	"activities": [
+		{"activity_info":{"name": "Work", 
+						  "subtype": "Professional Activity"},
+		 "datefrom": "2020-10-12T12:30:20+00:00"}
+	]
+	"status": "active"
+}
+
+
+{
+	"id": "P006",
+	"measurement": "Proximity",
+	"class": "physical",
+	"locations": [
+		{
+			"id": "desk",
+			"description": "Desk located in the Smart Home's bedroom",
+			"datefrom": "2020-10-12T12:30:20+00:00"
+		}
+	],
+	"activities": [
+		{
+			"activity_info":{
+				"name": "Work", 
+				"subtype": "Professional Activity"
+			},
+			"datefrom": "2020-10-12T12:30:20+00:00",
+			"dateto": "2022-03-08T15:13:23+00:00"
+		},
+		{
+			"activity_info":{
+				"name": "Homework",
+				"subtype": "Therapeutic Activity"
+			},
+			"datefrom": "2022-03-08T15:13:23+00:00"
+		}
+	],
+	"status": "active"
+}
+

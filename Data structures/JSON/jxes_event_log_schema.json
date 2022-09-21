@@ -1,0 +1,53 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"log-properties": {"type": "object"},
+		"log-attrs": {"type": "object"},
+		"extensions": {
+			"type": "array",
+			"items": {
+				  "type": "object",
+				  "properties": {
+					"name": {"type": "string"},
+					"prefix": {"type": "string"},
+					"uri": {"type": "string"}
+				  },
+				  "required": ["name"]
+			}
+		},
+		"global-attrs": {
+			"type": "object",
+			"properties": {
+				"trace": {"type": "object"},
+				"event": {"type": "object"}
+			},
+		},
+		"classifiers": {"type": "object"},
+		"traces": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"attrs": {"type": "object"},
+					"events": {
+					  "type": "array",
+					  "items": {
+						  "type": "object",
+						  "properties": {
+							"concept:name": {"type": "string"},
+							"date": {"type": "string"},
+							"org:resource": {"type": "string"},
+							"lifecycle:transition": {"type": "string"},
+						  },
+						  "required": ["concept:name", "date"],
+						  "additionalProperties":true
+						},
+					},
+					"required": ["events"]
+				}
+			}
+		}
+	},
+	"required": ["traces"]
+}
